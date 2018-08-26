@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">JVMImage</string>
+
+    <string name="open_new">打开</string>
+
+    <string name="main_hint">点击任意位置打开图片</string>
+
+    <string name="reset">重置</string>
+    <string name="brightness">亮度</string>
+    <string name="contrast">对比度</string>
+    <string name="saturation">饱和度</string>
+    <string name="exposure">曝光度</string>
+    <string name="shadow">阴影</string>
+    <string name="highlight">高光</string>
+    <string name="hue">色温</string>
+
+    <string name="done">完成</string>
+
+    <string name="processing">正在处理...</string>
+
+    <string name="save_success">图片已成功保存</string>
+    <string name="save_failure">图片保存失败</string>
+</resources>

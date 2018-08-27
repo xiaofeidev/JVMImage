@@ -22,10 +22,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private var mUri: Uri = Uri.parse("")
-    private var photo:String = ""
-    //待加载图像的实际尺寸
-    private var bmpWidth:Float = 0f
-    private var bmpHeight:Float = 0f
 
     private var mPressedTime: Long = 0
 
@@ -34,11 +30,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         initView()
     }
-
-    override fun onDestroy() {
-        super.onDestroy()
-    }
-
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: android.content.Intent?) {
         if (resultCode == android.app.Activity.RESULT_OK && requestCode == REQUEST_SELECT_PICTURE) {
@@ -64,8 +55,6 @@ class MainActivity : AppCompatActivity() {
     private fun initView(){
         toolBarMain.title = ""
         setSupportActionBar(toolBarMain)
-//            supportActionBar?.setDisplayHomeAsUpEnabled(true)
-//            btn_save.visibility = View.GONE
         start.setOnClickListener {
             pickFromGallery()
         }
@@ -113,7 +102,6 @@ class MainActivity : AppCompatActivity() {
             result = cursor.getString(idx)
             cursor.close()
         }
-//        return File(result).absolutePath
         return result
     }
 
@@ -121,5 +109,4 @@ class MainActivity : AppCompatActivity() {
     fun Activity.requestPermission(permissions: Array<String>,requestCode: Int){
         ActivityCompat.requestPermissions(this, permissions, requestCode)
     }
-
 }

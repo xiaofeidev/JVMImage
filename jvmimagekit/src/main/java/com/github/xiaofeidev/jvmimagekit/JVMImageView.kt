@@ -13,7 +13,6 @@ import android.view.View
 
 class JVMImageView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
     : View(context, attrs, defStyleAttr) {
-
     //原始图像
     private var mBitmapOrigin: Bitmap? = null
     //待绘制图像
@@ -88,14 +87,15 @@ class JVMImageView @JvmOverloads constructor(context: Context, attrs: AttributeS
         }
     }
 
+    //设置图片
     fun reSetBitmapOrigin(bitmap: Bitmap){
         mBitmapOrigin = bitmap
         requestLayout()
         applyColorMatrix()
     }
 
+    //应用颜色矩阵变换
     private fun applyColorMatrix(){
-        //应用颜色矩阵变换
         mColorMatrixFinal.reset()
         mColorMatrixFinal.postConcat(mColorMatrixBrightness)
         mColorMatrixFinal.postConcat(mColorMatrixExposure)

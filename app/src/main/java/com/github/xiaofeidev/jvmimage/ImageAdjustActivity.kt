@@ -164,6 +164,7 @@ class ImageAdjustActivity : AppCompatActivity() {
             }
         }
 
+        //调节亮度
         mSeekBarBrightness.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 var length = progress.toFloat()
@@ -183,6 +184,7 @@ class ImageAdjustActivity : AppCompatActivity() {
             }
         })
 
+        //调节对比度
         mSeekBarContrast.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 var length = progress.toFloat()
@@ -202,6 +204,7 @@ class ImageAdjustActivity : AppCompatActivity() {
             }
         })
 
+        //调节饱和度
         mSeekBarSaturation.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 var length = progress.toFloat()
@@ -227,6 +230,7 @@ class ImageAdjustActivity : AppCompatActivity() {
             }
         })
 
+        //调节曝光度
         mSeekBarExposure.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 var length = progress.toFloat()
@@ -252,6 +256,7 @@ class ImageAdjustActivity : AppCompatActivity() {
             }
         })
 
+        //调节色温，实现还不理想！！！
         mSeekBarHue.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 var length = progress.toFloat()

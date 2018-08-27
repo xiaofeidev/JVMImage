@@ -7,6 +7,8 @@
 
 项目演示是一个功能完整的app，欢迎各位同学关注~
 
-# 界面预览
+图像处理功能实现的核心类：JVMImageView，抽空我再完善下wiki
+
+# 功能预览
 
 <img src="https://github.com/xiaofei-dev/JVMImage/blob/master/app/art/screen_shot_1.gif" width="30%" height="30%">

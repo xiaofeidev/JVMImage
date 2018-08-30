@@ -276,6 +276,7 @@ class ImageAdjustActivity : AppCompatActivity() {
             }
         })
 
+        //reset
         btnReset.setOnClickListener {
             when(mSelectedSeeakBarContainer?.id){
                 R.id.mSeekBarBrightnessContainer ->{
@@ -336,6 +337,7 @@ class ImageAdjustActivity : AppCompatActivity() {
             }
         }
 
+        //回退操作
         btnLast.setOnClickListener {
             if (mActionBackStack.isNotEmpty()){
                 val action = mActionBackStack.pop()
@@ -360,6 +362,7 @@ class ImageAdjustActivity : AppCompatActivity() {
             }
         }
 
+        //前进操作
         btnNext.setOnClickListener {
             if (mActionForwardStack.isNotEmpty()){
                 val action = mActionForwardStack.pop()

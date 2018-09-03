@@ -109,24 +109,12 @@ class JVMImageView @JvmOverloads constructor(context: Context, attrs: AttributeS
         invalidate()
     }
 
-    //调整亮度？
+    //调整亮度
     fun transformColorMatrixBrightness(progress:Float){
         mColorMatrixBrightness.set(floatArrayOf(1f, 0f, 0f, 0f, progress,
                 0f, 1f, 0f, 0f, progress,
                 0f, 0f, 1f, 0f, progress,
                 0f, 0f, 0f, 1f, 0f))
-        applyColorMatrix()
-    }
-
-    //调整曝光度？
-    fun transformColorMatrixExposure(progress:Float){
-        mColorMatrixExposure.setScale(progress,progress,progress,1f)
-        applyColorMatrix()
-    }
-
-    //调整饱和度
-    fun transformColorMatrixSaturation(progress:Float){
-        mColorMatrixSaturation.setSaturation(progress)
         applyColorMatrix()
     }
 
@@ -141,11 +129,23 @@ class JVMImageView @JvmOverloads constructor(context: Context, attrs: AttributeS
         applyColorMatrix()
     }
 
+    //调整饱和度
+    fun transformColorMatrixSaturation(progress:Float){
+        mColorMatrixSaturation.setSaturation(progress)
+        applyColorMatrix()
+    }
+
+    //调整曝光度
+    fun transformColorMatrixExposure(progress:Float){
+        mColorMatrixExposure.setScale(progress,progress,progress,1f)
+        applyColorMatrix()
+    }
+
     //调整色阶
     fun transformColorMatrixHue(progress:Float){
-        mColorMatrixHue.setRotate(0,progress)
-        mColorMatrixHue.setRotate(1,progress)
-        mColorMatrixHue.setRotate(2,progress)
+        mColorMatrixHue.setRotate(0,progress)//Red
+        mColorMatrixHue.setRotate(1,progress)//Green
+        mColorMatrixHue.setRotate(2,progress)//Blue
         applyColorMatrix()
     }
 }

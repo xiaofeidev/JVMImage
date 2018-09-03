@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JVMImage.iml" filepath="$PROJECT_DIR$/JVMImage.iml" />
+      <module fileurl="file://D:\androidProject\AndroidProjectMe\JVMImage\JVMImage.iml" filepath="D:\androidProject\AndroidProjectMe\JVMImage\JVMImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\androidProject\AndroidProjectMe\JVMImage\app\app.iml" filepath="D:\androidProject\AndroidProjectMe\JVMImage\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvmimagekit/jvmimagekit.iml" filepath="$PROJECT_DIR$/jvmimagekit/jvmimagekit.iml" />
+      <module fileurl="file://D:\androidProject\AndroidProjectMe\JVMImage\jvmimagekit\jvmimagekit.iml" filepath="D:\androidProject\AndroidProjectMe\JVMImage\jvmimagekit\jvmimagekit.iml" />
     </modules>
   </component>
 </project>
